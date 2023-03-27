@@ -1,0 +1,72 @@
+// General Styles
+
+:root {
+    font-size: 62.5%;
+}
+
+* {
+    text-decoration: none;
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    font-family: 'Red Hat Display', sans-serif;
+    text-align: center;
+}
+
+.centralize {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+}
+
+.centralize-column {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+
+body {
+    background-color:hsl(225, 100%, 94%);
+    position: relative;
+}
+
+.body-background-image{
+    position: absolute;
+    z-index: -5;
+    width: 100%;
+    top: 0% !important;
+}
+
+.self-centralize {
+    align-self: center;
+    justify-self: center;
+}
+
+// Desktop view
+
+.desktop-view {
+    display: all;
+}
+
+.mobile-view {
+    display: none;
+}
+
+// Mobile view
+
+@media all and (max-width:376px) {
+
+    .desctop-view{
+        display: none;
+    }
+
+    .mobile-view {
+        display: all;
+    }
+
+}
+
+@import 'body';

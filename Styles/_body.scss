@@ -1,0 +1,116 @@
+.main-section {
+    margin-top: 5%;
+    background-color: hsl(225, 100%, 98%);
+    border-radius: 1.5rem;
+    display: grid;
+    grid-template-rows: 3fr 1.5fr 1fr 1fr;
+    row-gap: 5%;
+    width: 25%;
+    padding-bottom: 7rem;
+
+
+    .main-img {
+        border-radius: 1.5rem 1.5rem 0rem 0rem;
+        width: 100%;
+    }
+
+    .order-summary {
+        width: 85%;
+        h2 {
+            font-size: 2rem;
+        }
+
+        p {
+            margin-top: 1rem ;
+            font-size: 1.6rem;
+            width: 80%;
+
+        }
+    }
+
+    .annual-plan {
+        display: grid;
+        grid-template-columns: 1fr 2fr 1fr;
+        padding: 1rem;
+        background-color: hsla(225, 100%, 94%, 0.3);
+        border-radius: 3rem;
+        width: 85%;
+
+        .music-icon {
+            grid-column: 1 / 2;
+        }
+
+        p {
+            text-align: left;
+        }
+
+        div {
+            align-items: flex-start !important;
+            
+            :nth-child(1) {
+                padding-bottom: 0.5rem;
+                font-weight: bold;
+                font-size: 1.4rem;
+            }
+
+            :nth-child(2) {
+                color: hsl(224, 23%, 55%);
+                font-size: 1.2rem;
+            }
+        }
+        
+        .change-button {
+            grid-column: 3 / 4;
+            color: hsl(245, 75%, 52%);
+            text-decoration: underline;
+            font-size: 1.2rem;
+            font-weight: bold;
+        }
+
+        .change-button:hover {
+            text-decoration: none;
+            color: hsl(245, 66%, 66%);
+            transition: all ease-in-out 0.4s;
+        }
+    }
+
+    .order-or-cancel {
+        display: grid;
+        grid-auto-flow: row;
+        row-gap: 35%;
+        width: 85%;
+    
+        .order-button {
+            width: 90%;
+            background-color: hsl(245, 75%, 52%);
+            box-shadow: 0px 20px 55px hsla(0, 0%, 42%, 0.4);
+            padding: 1rem;
+            border-radius: 1rem;
+            text-align: center;
+            color: white;
+            font-size: 1.4rem;
+        }
+
+        .order-button:hover {
+            background-color: hsl(245, 66%, 66%);
+        }
+
+        .cancel-button {
+            color: hsl(224, 23%, 55%);
+            font-size: 1.3rem;
+            font-weight: bold;
+        }
+
+        .cancel-button:hover  {
+            color: black;
+        }
+    }
+}
+
+
+@media all and (max-width:376px) {
+    .main-section {
+        width: 88%;
+        
+    }
+}

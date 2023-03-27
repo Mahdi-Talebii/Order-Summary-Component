@@ -1,0 +1,156 @@
+:root {
+  font-size: 62.5%;
+}
+
+* {
+  text-decoration: none;
+  margin: 0%;
+  padding: 0%;
+  box-sizing: border-box;
+  font-family: "Red Hat Display", sans-serif;
+  text-align: center;
+}
+
+.centralize {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+}
+
+.centralize-column {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+body {
+  background-color: hsl(225, 100%, 94%);
+  position: relative;
+}
+
+.body-background-image {
+  position: absolute;
+  z-index: -5;
+  width: 100%;
+  top: 0% !important;
+}
+
+.self-centralize {
+  align-self: center;
+  justify-self: center;
+}
+
+.desktop-view {
+  display: all;
+}
+
+.mobile-view {
+  display: none;
+}
+
+@media all and (max-width: 376px) {
+  .desctop-view {
+    display: none;
+  }
+  .mobile-view {
+    display: all;
+  }
+}
+.main-section {
+  margin-top: 5%;
+  background-color: hsl(225, 100%, 98%);
+  border-radius: 1.5rem;
+  display: grid;
+  grid-template-rows: 3fr 1.5fr 1fr 1fr;
+  row-gap: 5%;
+  width: 25%;
+  padding-bottom: 7rem;
+}
+.main-section .main-img {
+  border-radius: 1.5rem 1.5rem 0rem 0rem;
+  width: 100%;
+}
+.main-section .order-summary {
+  width: 85%;
+}
+.main-section .order-summary h2 {
+  font-size: 2rem;
+}
+.main-section .order-summary p {
+  margin-top: 1rem;
+  font-size: 1.6rem;
+  width: 80%;
+}
+.main-section .annual-plan {
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr;
+  padding: 1rem;
+  background-color: hsla(225, 100%, 94%, 0.3);
+  border-radius: 3rem;
+  width: 85%;
+}
+.main-section .annual-plan .music-icon {
+  grid-column: 1/2;
+}
+.main-section .annual-plan p {
+  text-align: left;
+}
+.main-section .annual-plan div {
+  align-items: flex-start !important;
+}
+.main-section .annual-plan div :nth-child(1) {
+  padding-bottom: 0.5rem;
+  font-weight: bold;
+  font-size: 1.4rem;
+}
+.main-section .annual-plan div :nth-child(2) {
+  color: hsl(224, 23%, 55%);
+  font-size: 1.2rem;
+}
+.main-section .annual-plan .change-button {
+  grid-column: 3/4;
+  color: hsl(245, 75%, 52%);
+  text-decoration: underline;
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+.main-section .annual-plan .change-button:hover {
+  text-decoration: none;
+  color: hsl(245, 66%, 66%);
+  transition: all ease-in-out 0.4s;
+}
+.main-section .order-or-cancel {
+  display: grid;
+  grid-auto-flow: row;
+  row-gap: 35%;
+  width: 85%;
+}
+.main-section .order-or-cancel .order-button {
+  width: 90%;
+  background-color: hsl(245, 75%, 52%);
+  box-shadow: 0px 20px 55px hsla(0, 0%, 42%, 0.4);
+  padding: 1rem;
+  border-radius: 1rem;
+  text-align: center;
+  color: white;
+  font-size: 1.4rem;
+}
+.main-section .order-or-cancel .order-button:hover {
+  background-color: hsl(245, 66%, 66%);
+}
+.main-section .order-or-cancel .cancel-button {
+  color: hsl(224, 23%, 55%);
+  font-size: 1.3rem;
+  font-weight: bold;
+}
+.main-section .order-or-cancel .cancel-button:hover {
+  color: black;
+}
+
+@media all and (max-width: 376px) {
+  .main-section {
+    width: 88%;
+  }
+}/*# sourceMappingURL=style.css.map */
